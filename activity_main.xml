@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- (i) TableLayout producing the interface in the question -->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:stretchColumns="1">
+
+    <!-- Row 1: Num 1 -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/tvNum1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#D9D9D9"
+            android:padding="8dp"
+            android:text="Num 1"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/etNum1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:hint="Enter integer"
+            android:inputType="numberSigned" />
+    </TableRow>
+
+    <!-- Row 2: Num 2 -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/tvNum2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#D9D9D9"
+            android:padding="8dp"
+            android:text="Num 2"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/etNum2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:hint="Enter integer"
+            android:inputType="numberSigned" />
+    </TableRow>
+
+    <!-- Row 3: Num 3 -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/tvNum3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#D9D9D9"
+            android:padding="8dp"
+            android:text="Num 3"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/etNum3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:hint="Enter integer"
+            android:inputType="numberSigned" />
+    </TableRow>
+
+    <!-- Row 4: Answer -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/tvAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#D9D9D9"
+            android:padding="8dp"
+            android:text="Answer"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/etAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:enabled="false"
+            android:inputType="none"
+            android:textColor="#000000" />
+    </TableRow>
+
+    <!-- Row 5: Maximum and Minimum buttons -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnMax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maximum" />
+
+        <Button
+            android:id="@+id/btnMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Minimum" />
+    </TableRow>
+
+    <!-- Row 6: extra button used for part (iv) to jump to the second activity -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:text="Next (Second Activity)" />
+    </TableRow>
+
+</TableLayout>
